@@ -1,0 +1,101 @@
+body {
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+  background-color: #f6e9f8; /* Color de fondo pastel morado */
+  color: #444; /* Color de texto */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; /* Color de fondo pastel para el encabezado */
+  padding: 10px 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #712f5f; /* Color de los enlaces del menú */
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #a66db6; /* Color de los enlaces del menú al pasar el ratón */
+}
+
+.menu-toggle {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  display: none;
+}
+
+section {
+  padding: 50px;
+  margin-bottom: 20px; /* Espacio en blanco entre secciones */
+}
+
+section:nth-child(odd) {
+  background-color: #dcbcf5; /* Color de fondo pastel morado para secciones impares */
+}
+
+section:nth-child(even) {
+  background-color: #fff; /* Color de fondo blanco para secciones pares */
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.active {
+  opacity: 1;
+  transform: translateY(5 );
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #dcbcf5; /* Color de fondo pastel para el pie de página */
+}
+
+pre{
+  font-family: 'Roboto', sans-serif;
+}
+#home{
+  display: flex;
+
+}
