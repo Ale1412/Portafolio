@@ -68,11 +68,11 @@ section {
 }
 
 section:nth-child(odd) {
-  background-color: #dcbcf5; /* Color de fondo pastel morado para secciones impares */
+  background-color: #52C3BE; /* Color de fondo pastel morado para secciones impares */
 }
 
 section:nth-child(even) {
-  background-color: #fff; /* Color de fondo blanco para secciones pares */
+  background-color: #FABE75; /* Color de fondo blanco para secciones pares */
 }
 
 .section {
@@ -86,16 +86,115 @@ section:nth-child(even) {
   transform: translateY(5 );
 }
 
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #dcbcf5; /* Color de fondo pastel para el pie de página */
-}
 
 pre{
   font-family: 'Roboto', sans-serif;
 }
-#home{
-  display: flex;
 
+#home{
+  font-size: 35px;
+  height: 78vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#proyectos{
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#proyectos img{
+  height: 30vh;
+  margin: 10px;
+  border-radius: 20px;
+  border: 3px solid white;
+
+}
+
+#proyectos h2{
+  font-size: 45px;
+  margin-right: 1000px;
+}
+
+#sobre-mi{
+  height: 70vh;
+}
+
+#sobre-mi pre{
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
+  width: 300px;
+  height: 200px;
+}
+.contenido{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sobre-mi h2{
+  font-size: 45px;
+
+  /* margin-right: 1000px; */
+}
+
+#sobre-mi img{
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 430px;
+  position: fixed;
+  right: 10px;
+  bottom: 105px;
+  margin: 10px;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  justify-content: center
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+#contacto{
+  height: 60vh;
+}
+
+#contacto h2{
+  font-size: 45px;
+}
+
+iframe{
+  margin-left: 700px;
+  /* display: flex; */
+  border-radius: 25px;
+  margin-top: -245px;
+  
 }
