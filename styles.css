@@ -101,7 +101,7 @@ pre{
 }
 
 #proyectos{
-  height: 100vh;
+  height: 150vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
